@@ -1,0 +1,144 @@
+
+body {
+    background-image: url("background.jpg");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif
+  }
+
+  .image-container {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 90px;
+    width: 90px;
+  }
+  
+  .image-container img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+.containers
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.containers .container .box
+{
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    border-radius: 4px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+.containers .container .box:before
+{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 2;
+    pointer-events: none;
+
+}
+.containers .container .box .icon
+{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 1s;
+}
+
+.containers .container .box:nth-child(1) .icon
+{
+    box-shadow: 0 0 0 0 #839DDC;
+    background-color: #839DDC;
+}
+.containers .container .box:nth-child(1):hover .icon
+{
+    box-shadow: 0 0 0 800px #839DDC;
+    transition: 1s;
+}
+.containers .container .box:nth-child(2) .icon
+{
+    box-shadow: 0 0 0 0 #e91e63;
+    background-color: #e91e63;
+}
+.containers .container .box:nth-child(2):hover .icon
+{
+    box-shadow: 0 0 0 400px #e91e63;
+    transition: 1s;
+}
+.containers .container .box:nth-child(33) .icon
+{
+    box-shadow: 0 0 0 0 #D896C4;
+    background-color: #D896C4;
+}
+.containers .container .box:nth-child(3):hover .icon
+{
+    box-shadow: 0 0 0 400px #D896C4;
+    transition: 1s;
+}
+
+.containers .container .box .content
+{
+    position: relative;
+    z-index: 1;
+    transition: 1s;
+}
+.containers .container .box:hover .content
+{
+    color: white;
+}
+
+.containers .container .box .content h3
+{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.containers .container .box .content p
+{
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    font-weight: 200px;
+    margin-top: 20px;
+    box-shadow: 0 2x 5px rgba(0,0,0,.2);
+}
+
