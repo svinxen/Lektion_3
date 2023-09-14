@@ -87,15 +87,15 @@ body {
 }
 .containers .container .box:nth-child(2) .icon
 {
-    box-shadow: 0 0 0 0 #e91e63;
-    background-color: #e91e63;
+    box-shadow: 0 0 0 0 #6d5286;
+    background-color: #6d5286;
 }
 .containers .container .box:nth-child(2):hover .icon
 {
-    box-shadow: 0 0 0 400px #e91e63;
+    box-shadow: 0 0 0 400px #6d5286;
     transition: 1s;
 }
-.containers .container .box:nth-child(33) .icon
+.containers .container .box:nth-child(3) .icon
 {
     box-shadow: 0 0 0 0 #D896C4;
     background-color: #D896C4;
